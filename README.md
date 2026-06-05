@@ -21,8 +21,8 @@ Abre [http://localhost:3000](http://localhost:3000).
 | Original | Next.js |
 |----------|---------|
 | `/index.html` | `/` |
-| `/pages/colegios` | `/colegios` |
-| `/pages/colegio-las-condes` | `/colegios/colegio-las-condes` |
+| `/colegios` | `/colegios` |
+| `/colegio-las-condes` | `/colegios/colegio-las-condes` |
 | `/pages/no-disponible` | `/no-disponible` |
 
 Las URLs antiguas redirigen automáticamente (`next.config.ts`).

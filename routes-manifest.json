@@ -1,0 +1,204 @@
+{
+  "version": 3,
+  "pages404": true,
+  "appType": "app",
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "priority": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    },
+    {
+      "source": "/colegios",
+      "destination": "/colegios",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/colegios(?:/)?$"
+    },
+    {
+      "source": "/colegios.html",
+      "destination": "/colegios",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/colegios\\.html(?:/)?$"
+    },
+    {
+      "source": "/pages/no-disponible",
+      "destination": "/no-disponible",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/pages/no-disponible(?:/)?$"
+    },
+    {
+      "source": "/pages/no-disponible.html",
+      "destination": "/no-disponible",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/pages/no-disponible\\.html(?:/)?$"
+    },
+    {
+      "source": "/colegio-las-condes",
+      "destination": "/colegios/colegio-las-condes",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/colegio-las-condes(?:/)?$"
+    },
+    {
+      "source": "/colegio-las-condes.html",
+      "destination": "/colegios/colegio-las-condes",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/colegio-las-condes\\.html(?:/)?$"
+    },
+    {
+      "source": "/colegio-coyancura",
+      "destination": "/colegios/colegio-coyancura",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/colegio-coyancura(?:/)?$"
+    },
+    {
+      "source": "/colegio-coyancura.html",
+      "destination": "/colegios/colegio-coyancura",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/colegio-coyancura\\.html(?:/)?$"
+    },
+    {
+      "source": "/colegio-nuestra-senora-del-rosario",
+      "destination": "/colegios/colegio-nuestra-senora-del-rosario",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/colegio-nuestra-senora-del-rosario(?:/)?$"
+    },
+    {
+      "source": "/colegio-nuestra-senora-del-rosario.html",
+      "destination": "/colegios/colegio-nuestra-senora-del-rosario",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/colegio-nuestra-senora-del-rosario\\.html(?:/)?$"
+    },
+    {
+      "source": "/colegio-leonardo-da-vinci",
+      "destination": "/colegios/colegio-leonardo-da-vinci",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/colegio-leonardo-da-vinci(?:/)?$"
+    },
+    {
+      "source": "/colegio-leonardo-da-vinci.html",
+      "destination": "/colegios/colegio-leonardo-da-vinci",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/colegio-leonardo-da-vinci\\.html(?:/)?$"
+    },
+    {
+      "source": "/colegio-san-francisco-del-alba",
+      "destination": "/colegios/colegio-san-francisco-del-alba",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/colegio-san-francisco-del-alba(?:/)?$"
+    },
+    {
+      "source": "/colegio-san-francisco-del-alba.html",
+      "destination": "/colegios/colegio-san-francisco-del-alba",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/colegio-san-francisco-del-alba\\.html(?:/)?$"
+    },
+    {
+      "source": "/colegio-san-francisco",
+      "destination": "/colegios/colegio-san-francisco",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/colegio-san-francisco(?:/)?$"
+    },
+    {
+      "source": "/colegio-san-francisco.html",
+      "destination": "/colegios/colegio-san-francisco",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/colegio-san-francisco\\.html(?:/)?$"
+    },
+    {
+      "source": "/colegio-simon-bolivar",
+      "destination": "/colegios/colegio-simon-bolivar",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/colegio-simon-bolivar(?:/)?$"
+    },
+    {
+      "source": "/colegio-simon-bolivar.html",
+      "destination": "/colegios/colegio-simon-bolivar",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/colegio-simon-bolivar\\.html(?:/)?$"
+    }
+  ],
+  "headers": [],
+  "onMatchHeaders": [],
+  "rewrites": {
+    "beforeFiles": [],
+    "afterFiles": [],
+    "fallback": []
+  },
+  "dynamicRoutes": [
+    {
+      "page": "/colegios/[slug]",
+      "regex": "^/colegios/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPslug": "nxtPslug"
+      },
+      "namedRegex": "^/colegios/(?<nxtPslug>[^/]+?)(?:/)?$"
+    }
+  ],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_global-error",
+      "regex": "^/_global\\-error(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_global\\-error(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/api/contact",
+      "regex": "^/api/contact(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/contact(?:/)?$"
+    },
+    {
+      "page": "/colegios",
+      "regex": "^/colegios(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/colegios(?:/)?$"
+    },
+    {
+      "page": "/favicon.ico",
+      "regex": "^/favicon\\.ico(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/favicon\\.ico(?:/)?$"
+    },
+    {
+      "page": "/no-disponible",
+      "regex": "^/no\\-disponible(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/no\\-disponible(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "rsc",
+    "varyHeader": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "prefetchHeader": "next-router-prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSegmentHeader": "next-router-segment-prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments",
+    "clientParamParsing": false,
+    "dynamicRSCPrerender": false
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  }
+}

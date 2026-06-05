@@ -36,13 +36,12 @@ export function HeroCarousel({
         style={{ transform: `translateX(-${index * 100}%)` }}
       >
         {slides.map((slide, i) => (
-          <div key={slide.src} className="relative min-w-full shrink-0">
+          <div key={slide.src} className="relative w-full shrink-0 aspect-[16/6] min-h-[220px]">
             <Image
               src={slide.src}
               alt={slide.alt}
-              width={1920}
-              height={650}
-              className="h-auto w-full"
+              fill
+              className="object-cover"
               priority={i === 0}
               sizes="100vw"
             />
