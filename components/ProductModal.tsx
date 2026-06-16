@@ -145,9 +145,6 @@ export function ProductModal({ product, collegeName, onClose }: Props) {
               <i className="fab fa-whatsapp text-lg" />
               Consultar disponibilidad por WhatsApp
             </a>
-            <p className="text-center text-[11px] text-slate-400">
-              Este sitio es informativo. Los precios pueden variar según stock y temporada.
-            </p>
           </div>
         </div>
       </div>

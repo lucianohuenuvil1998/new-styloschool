@@ -4,11 +4,11 @@ import { SITE } from "@/lib/site";
 
 const MOSAIC = [
   { src: "/img/productos/Colegio_san-francisco-del-alba/CSDA_10.webp",  alt: "Uniforme femenino San Francisco del Alba" },
-  { src: "/img/productos/Colegio_san-francisco-del-alba/CSDA_11.webp",  alt: "Uniforme masculino San Francisco del Alba" },
+  { src: "/img/productos/Colegio_Leonardo_da_vinci/CLD_11.webp",  alt: "Uniforme masculino Leonardo da Vinci" },
   { src: "/img/productos/Colegio_lascondes/CLC_1.webp",                alt: "Uniforme Las Condes" },
   { src: "/img/productos/Colegio_lascondes/CLC_2.webp",                alt: "Blazer Las Condes" },
   { src: "/img/productos/Colegio_Simon_bolivar/CSB_2.webp",           alt: "Uniforme Simón Bolívar" },
-  { src: "/img/productos/Colegio_Simon_bolivar/CSB_9.webp",           alt: "Conjunto Simón Bolívar" },
+  { src: "/img/productos/Colegio_Simon_bolivar/CSB_1.webp",           alt: "Conjunto Simón Bolívar" },
   { src: "/img/productos/Colegio_Coyancura/CC_3.webp",                 alt: "Uniforme Coyancura" },
   { src: "/img/productos/Colegio_san_francisco/CSFTP_3.webp",          alt: "Uniforme San Francisco" },
 ];
@@ -20,7 +20,7 @@ const HORARIOS = [
 
 export function HeroSection() {
   return (
-    <section className="min-h-[85vh] lg:h-[85vh] flex flex-col lg:grid lg:grid-cols-[5fr_6fr] lg:grid-rows-1 overflow-hidden">
+    <section className="lg:h-[85vh] flex flex-col lg:grid lg:grid-cols-[5fr_6fr] lg:grid-rows-1 overflow-hidden">
       {/* ── Left panel ─────────────────────────────────────── */}
       <div className="relative z-10 flex flex-col justify-center gap-5 bg-gradient-to-br from-[#0b2e3d] via-[#0f3d52] to-[#166f70] px-8 py-8 sm:px-12 lg:px-14 xl:px-20">
         {/* Decorative circle */}

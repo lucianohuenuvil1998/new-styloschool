@@ -463,7 +463,7 @@ const productsByCollege = {
     "colegio-leonardo-da-vinci": [
         {
             title: "Vestimenta deportiva",
-            image: "/img/productos/Colegio_Leonardo_ da_vinci/CLD-B1.webp",
+            image: "/img/productos/Colegio_Leonardo_da_vinci/CLD-B1.webp",
             lines: L([
                 [
                     "Precio Polerón",
@@ -489,7 +489,7 @@ const productsByCollege = {
         },
         {
             title: "Polera deportiva",
-            image: "/img/productos/Colegio_Leonardo_ da_vinci/CLD-B3.webp",
+            image: "/img/productos/Colegio_Leonardo_da_vinci/CLD-B3.webp",
             lines: L([
                 [
                     "Precio Polera",
@@ -511,7 +511,7 @@ const productsByCollege = {
         },
         {
             title: "Vestimenta Institucional",
-            image: "/img/productos/Colegio_Leonardo_ da_vinci/CLD-H1.webp",
+            image: "/img/productos/Colegio_Leonardo_da_vinci/CLD-H1.webp",
             lines: L([
                 [
                     "Precio Polerón",
@@ -537,7 +537,7 @@ const productsByCollege = {
         },
         {
             title: "Vestimenta Institucional",
-            image: "/img/productos/Colegio_Leonardo_ da_vinci/CLD-H5.webp",
+            image: "/img/productos/Colegio_Leonardo_da_vinci/CLD-H5.webp",
             lines: L([
                 [
                     "Precio Polera",
@@ -563,7 +563,7 @@ const productsByCollege = {
         },
         {
             title: "Vestimenta Institucional",
-            image: "/img/productos/Colegio_Leonardo_ da_vinci/CLD-M2.webp",
+            image: "/img/productos/Colegio_Leonardo_da_vinci/CLD-M2.webp",
             lines: L([
                 [
                     "Precio Polerón",

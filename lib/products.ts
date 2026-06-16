@@ -97,18 +97,18 @@ export const productsByCollege: Record<string, Product[]> = {
   "colegio-leonardo-da-vinci": [
     {
       title: "Vestimenta deportiva",
-      image: "/img/productos/Colegio_Leonardo_ da_vinci/CLD_1.webp",
+      image: "/img/productos/Colegio_Leonardo_da_vinci/CLD_11.webp",
       lines: L([
-        ["Precio Polerón", "Desde $19.500"],
-        ["Material", "Franela Algodón"],
         ["Precio Buzo", "Desde $14.200"],
         ["Material", "Franela Algodón"],
         ["Tallas disponibles", "4 a XXL"],
+        ["Precio Polerón", "Desde $19.500"],
+        ["Material", "Franela Algodón"],
       ]),
     },
     {
       title: "Polera deportiva",
-      image: "/img/productos/Colegio_Leonardo_ da_vinci/CLD_2.webp",
+      image: "/img/productos/Colegio_Leonardo_da_vinci/CLD_1.webp",
       lines: L([
         ["Precio Polera", "Desde $11.500"],
         ["Tipo", "Jersey"],
@@ -118,18 +118,18 @@ export const productsByCollege: Record<string, Product[]> = {
     },
     {
       title: "Vestimenta Institucional",
-      image: "/img/productos/Colegio_Leonardo_ da_vinci/CLD_3.webp",
+      image: "/img/productos/Colegio_Leonardo_da_vinci/CLD_3.webp",
       lines: L([
-        ["Precio Polerón", "Desde $19.500"],
-        ["Material", "Franela Algodón"],
         ["Precio Pantalón", "Desde $15.900"],
         ["Material", "Tradicional"],
         ["Tallas disponibles", "4 a XXL"],
+        ["Precio Polerón", "Desde $19.500"],
+        ["Material", "Franela Algodón"],
       ]),
     },
     {
       title: "Vestimenta Institucional",
-      image: "/img/productos/Colegio_Leonardo_ da_vinci/CLD_4.webp",
+      image: "/img/productos/Colegio_Leonardo_da_vinci/CLD_4.webp",
       lines: L([
         ["Precio Polera", "Desde $13.500"],
         ["Material", "Pique"],
@@ -140,7 +140,7 @@ export const productsByCollege: Record<string, Product[]> = {
     },
     {
       title: "Vestimenta Institucional",
-      image: "/img/productos/Colegio_Leonardo_ da_vinci/CLD_5.webp",
+      image: "/img/productos/Colegio_Leonardo_da_vinci/CLD_9.webp",
       lines: L([
         ["Precio Polerón", "Desde $19.500"],
         ["Material", "Franela Algodón"],
@@ -164,11 +164,11 @@ export const productsByCollege: Record<string, Product[]> = {
       title: "Vestimenta Deportiva",
       image: "/img/productos/Colegio_san_francisco/CSFTP_2.webp",
       lines: L([
-        ["Precio Polerón", "Desde $19.500"],
-        ["Material", "Franela Algodón"],
         ["Precio Buzo", "Desde $14.200"],
         ["Material", "Franela Algodón"],
         ["Tallas disponibles", "4 a XXL"],
+        ["Precio Polerón", "Desde $19.500"],
+        ["Material", "Franela Algodón"],
       ]),
     },
     {
@@ -188,6 +188,17 @@ export const productsByCollege: Record<string, Product[]> = {
         ["Material", "Franela Algodón"],
         ["Precio Falda", "Desde $21.500"],
         ["Tipo", "Falda Escocés"],
+        ["Tallas disponibles", "4 a XXL"],
+      ]),
+    },
+    {
+      title: "Vestimenta Deportiva",
+      image: "/img/productos/Colegio_san_francisco/CSFTP_5.webp",
+      lines: L([
+        ["Precio polera", "Desde $11.500"],
+        ["Material", "Jersay"],
+        ["Precio Buzo", "Desde $14.200"],
+        ["Material", "Franela Algodón"],
         ["Tallas disponibles", "4 a XXL"],
       ]),
     },
@@ -219,7 +230,7 @@ export const productsByCollege: Record<string, Product[]> = {
       title: "Vestimenta Institucional",
       image: "/img/productos/Colegio_Simon_bolivar/CSB_3.webp",
       lines: L([  
-        ["Precio corbata", "$8.900"],
+        ["Precio corbata", "Desde $8.900"],
         ["Material", "Franela Fantasía"],
         ["Precio Falda", "Desde $21.500"],
         ["Tipo", "Falda Escocés"],
@@ -239,7 +250,7 @@ export const productsByCollege: Record<string, Product[]> = {
     },
     {
       title: "Polera Deportiva",
-      image: "/img/productos/Colegio_Simon_bolivar/CSB_2.webp",
+      image: "/img/productos/Colegio_Simon_bolivar/CSB_5.webp",
       lines: L([
         ["Precio Polera", "Desde $11.500"],
         ["Material", "Gamuza"],
@@ -259,7 +270,7 @@ export const productsByCollege: Record<string, Product[]> = {
     },
     {
       title: "Vestimenta Deportiva",
-      image: "/img/productos/Colegio_Simon_bolivar/CSB_5.webp",
+      image: "/img/productos/Colegio_Simon_bolivar/CSB_7.webp",
       lines: L([
         ["Precio Polera", "Desde $11.500"],
         ["Material", "Jersey"],
@@ -276,7 +287,7 @@ productsByCollege["colegio-nuestra-senora-del-rosario"] = [
   {
     title: "Vestimenta Institucional",
     image:
-      "/img/productos/Colegio_nuestra señora_del_rosario/CNSR_1.webp",
+      "/img/productos/Colegio_nuestra señora_del_rosario/CNSR_5.webp",
     lines: L([
       ["Precio Polera", "Desde $13.900"],
       ["Material", "Jersey"],
@@ -288,7 +299,7 @@ productsByCollege["colegio-nuestra-senora-del-rosario"] = [
   {
     title: "Vestimenta Institucional",
     image:
-      "/img/productos/Colegio_nuestra señora_del_rosario/CNSR_2.webp",
+      "/img/productos/Colegio_nuestra señora_del_rosario/CNSR_6.webp",
     lines: L([
       ["Precio Polera", "Desde $13.500"],
       ["Material", "Jersey"],
@@ -300,19 +311,19 @@ productsByCollege["colegio-nuestra-senora-del-rosario"] = [
   {
     title: "Vestimenta Institucional",
     image:
-      "/img/productos/Colegio_nuestra señora_del_rosario/CNSR_3.webp",
+      "/img/productos/Colegio_nuestra señora_del_rosario/CNSR_10.webp",
     lines: L([
-      ["Precio Polerón", "Desde $19.500"],
-      ["Material", "Franela Algodón"],
       ["Precio Pantalón", "Desde $15.900"],
       ["Material", "Tradicional"],
       ["Tallas disponibles", "4 a XXL"],
+      ["Precio Polerón", "Desde $19.500"],
+      ["Material", "Franela Algodón"],
     ]),
   },
   {
     title: "Vestimenta Deportiva",
     image:
-      "/img/productos/Colegio_nuestra señora_del_rosario/CNSR_4.webp",
+      "/img/productos/Colegio_nuestra señora_del_rosario/CNSR_3.webp",
     lines: L([
       ["Precio Polera", "Desde $11.500"],
       ["Tipo", "Jersey"],
@@ -324,36 +335,36 @@ productsByCollege["colegio-nuestra-senora-del-rosario"] = [
   {
     title: "Vestimenta Deportiva",
     image:
-      "/img/productos/Colegio_nuestra señora_del_rosario/CNSR_5.webp",
+      "/img/productos/Colegio_nuestra señora_del_rosario/CNSR_1.webp",
     lines: L([
+      ["Tallas disponibles", "10 a XXL"],
       ["Precio Polera", "Desde $11.500"],
       ["Tipo", "Jersey"], 
       ["Precio Buzo", "Desde $14.200"],
       ["Material", "Franela Algodón"],
-      ["Tallas disponibles", "10 a XXL"],
     ]),
   },
   {
     title: "Vestimenta Deportiva",
     image:
-      "/img/productos/Colegio_nuestra señora_del_rosario/CNSR_6.webp",
+      "/img/productos/Colegio_nuestra señora_del_rosario/CNSR_2.webp",
     lines: L([
-      ["Precio Polerón", "Desde $19.500"],
-      ["Material", "Franela Algodón"],
       ["Precio Buzo", "Desde $14.200"],
       ["Material", "Franela Algodón"],
       ["Tallas disponibles", "4 a XXL"],
+      ["Precio Polerón", "Desde $19.500"],
+      ["Material", "Franela Algodón"],
     ]),
   },
   {
     title: "Vestimenta Deportiva",
-    image: "/img/productos/Colegio_nuestra señora_del_rosario/CNSR_7.webp",
+    image: "/img/productos/Colegio_nuestra señora_del_rosario/CNSR_4.webp",
     lines: L([
-      ["Precio Polerón", "Desde $19.500"],
-      ["Material", "Franela Algodón"],
       ["Precio Buzo", "Desde $14.200"],
       ["Material", "Franela Algodón"],
       ["Tallas disponibles", "4 a XXL"],
+      ["Precio Polerón", "Desde $19.500"],
+      ["Material", "Franela Algodón"],
     ]),
   },
   {
@@ -385,11 +396,11 @@ productsByCollege["colegio-nuestra-senora-del-rosario"] = [
     image:
       "/img/productos/Colegio_nuestra señora_del_rosario/CNSR_10.webp",
     lines: L([
-      ["Precio Polerón", "Desde $19.500"],
-      ["Material", "Franela Algodón"],
       ["Precio Falda", "Desde $17.900"],
       ["Tipo", "Tablas Azul"],
       ["Tallas disponibles", "4 a XXL"],
+      ["Precio Polerón", "Desde $19.500"],
+      ["Material", "Franela Algodón"],
     ]),
   },
 ];
@@ -397,7 +408,7 @@ productsByCollege["colegio-nuestra-senora-del-rosario"] = [
 productsByCollege["colegio-san-francisco-del-alba"] = [
   {
     title: "Vestimenta Institucional",
-    image: "/img/productos/Colegio_san-francisco-del-alba/CSDA_1.webp",
+    image: "/img/productos/Colegio_san-francisco-del-alba/CSDA_11.webp",
     lines: L([
       ["Precio Polerón", "Desde $19.500"],
       ["Material", "Franela Algodón"],
@@ -408,7 +419,7 @@ productsByCollege["colegio-san-francisco-del-alba"] = [
   },
   {
     title: "Vestimenta Institucional",
-    image: "/img/productos/Colegio_san-francisco-del-alba/CSDA_2.webp",
+    image: "/img/productos/Colegio_san-francisco-del-alba/CSDA_12.webp",
     lines: L([
       ["Precio camisa", "Desde $11.500"],
       ["Material", "Genérica"],
@@ -419,7 +430,7 @@ productsByCollege["colegio-san-francisco-del-alba"] = [
   },
   {
     title: "Vestimenta deportiva",
-    image: "/img/productos/Colegio_san-francisco-del-alba/CSDA_3.webp",
+    image: "/img/productos/Colegio_san-francisco-del-alba/CSDA_4.webp",
     lines: L([
       ["Precio Polera", "Desde $11.500"],
       ["Material", "Gamuza"],
@@ -430,35 +441,13 @@ productsByCollege["colegio-san-francisco-del-alba"] = [
   },
   {
     title: "Vestimenta deportiva",
-    image: "/img/productos/Colegio_san-francisco-del-alba/CSDA_4.webp",
-    lines: L([
-      ["Precio Polerón", "Desde $19.500"],
-      ["Material", "Franela Algodón"],
-      ["Precio Buzo", "Desde $14.200"],
-      ["Material", "Algodón"],
-        ["Tallas disponibles", "4 a XXL"],
-    ]),
-  },
-  {
-    title: "Vestimenta Institucional",
     image: "/img/productos/Colegio_san-francisco-del-alba/CSDA_5.webp",
     lines: L([
-      ["Precio Polera", "Desde $13.500"],
-      ["Material", "Pique"],
-      ["Precio Pantalón", "Desde $15.900"],
-      ["Material", "Tradicional"],
+      ["Precio Buzo", "Desde $14.200"],
+      ["Material", "Algodón"],
       ["Tallas disponibles", "4 a XXL"],
-    ]),
-  },
-  {
-    title: "Vestimenta Institucional",
-    image: "/img/productos/Colegio_san-francisco-del-alba/CSDA_6.webp",
-    lines: L([
       ["Precio Polerón", "Desde $19.500"],
       ["Material", "Franela Algodón"],
-      ["Precio Pantalón", "Desde $15.900"],
-      ["Material", "Tradicional"],
-      ["Tallas disponibles", "4 a XXL"],
     ]),
   },
   {
@@ -467,8 +456,8 @@ productsByCollege["colegio-san-francisco-del-alba"] = [
     lines: L([
       ["Precio Polera", "Desde $13.500"],
       ["Material", "Pique"],
-      ["Precio Falda", "Desde $21.500"],
-      ["Material", "Casimir Escocés"],
+      ["Precio Pantalón", "Desde $15.900"],
+      ["Material", "Tradicional"],
       ["Tallas disponibles", "4 a XXL"],
     ]),
   },
@@ -476,17 +465,29 @@ productsByCollege["colegio-san-francisco-del-alba"] = [
     title: "Vestimenta Institucional",
     image: "/img/productos/Colegio_san-francisco-del-alba/CSDA_8.webp",
     lines: L([
+      ["Precio Pantalón", "Desde $15.900"],
+      ["Material", "Tradicional"],
+      ["Tallas disponibles", "4 a XXL"],
       ["Precio Polerón", "Desde $19.500"],
       ["Material", "Franela Algodón"],
+    ]),
+  },
+  {
+    title: "Vestimenta Institucional",
+    image: "/img/productos/Colegio_san-francisco-del-alba/CSDA_10.webp",
+    lines: L([
+      ["Precio Polera", "Desde $13.500"],
+      ["Material", "Pique"],
       ["Precio Falda", "Desde $21.500"],
       ["Material", "Casimir Escocés"],
       ["Tallas disponibles", "4 a XXL"],
     ]),
   },
+
   {
     title: "Vestimenta Deportiva",
     image:
-      "/img/productos/Colegio_san-francisco-del-alba/CSDA_9.webp",
+      "/img/productos/Colegio_san-francisco-del-alba/CSDA_2.webp",
     lines: L([
       ["Precio Polera", "Desde $11.500"],
       ["Tipo", "Manga Corta"],
@@ -495,7 +496,7 @@ productsByCollege["colegio-san-francisco-del-alba"] = [
   },
   {
     title: "Vestimenta Deportiva",
-    image: "/img/productos/Colegio_san-francisco-del-alba/CSDA_10.webp",
+    image: "/img/productos/Colegio_san-francisco-del-alba/CSDA_1.webp",
     lines: L([
       ["Precio Polera", "Desde $11.900"],
       ["Tipo", "Manga Larga"],
