@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Nunito } from "next/font/google";
 import Script from "next/script";
 import { SiteFooter } from "@/components/SiteFooter";
@@ -12,6 +12,10 @@ const nunito = Nunito({
   subsets: ["latin"],
   weight: ["400", "600", "700"],
 });
+
+export const viewport: Viewport = {
+  colorScheme: "light",
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL(
