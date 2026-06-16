@@ -1,15 +1,10 @@
 import { CategoryCard } from "@/components/CategoryCard";
 import { CollegeCard } from "@/components/CollegeCard";
 import { ContactForm } from "@/components/ContactForm";
-import { HeroCarousel } from "@/components/HeroCarousel";
+import { HeroSection } from "@/components/HeroSection";
 import { LocationSection } from "@/components/LocationSection";
 import { StoreInfo } from "@/components/StoreInfo";
-import {
-  carouselDesktop,
-  carouselMobile,
-  categories,
-  colleges,
-} from "@/lib/site";
+import { categories, colleges } from "@/lib/site";
 
 function SectionHeading({
   eyebrow,
@@ -33,9 +28,8 @@ function SectionHeading({
 export default function HomePage() {
   return (
     <>
-      {/* ── Hero Carousel ── */}
-      <HeroCarousel slides={carouselDesktop} className="hidden md:block" />
-      <HeroCarousel slides={carouselMobile} className="md:hidden" />
+      {/* ── Hero ── */}
+      <HeroSection />
 
       {/* ── Categories ── */}
       <section id="categorias" className="scroll-mt-24 py-16">

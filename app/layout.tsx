@@ -43,7 +43,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es" className={nunito.variable}>
+    <html lang="es" className={nunito.variable} style={{ colorScheme: "light" }}>
       <body className="flex min-h-screen flex-col font-sans antialiased">
         <SiteHeader />
         <main className="flex-1">{children}</main>

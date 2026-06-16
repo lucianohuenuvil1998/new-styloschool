@@ -25,7 +25,10 @@
 }
 
 /* ─── Base ───────────────────────────────────────────── */
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+  color-scheme: light;
+}
 
 body {
   background: var(--surface);

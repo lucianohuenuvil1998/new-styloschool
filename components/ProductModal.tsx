@@ -53,7 +53,7 @@ export function ProductModal({ product, collegeName, onClose }: Props) {
         onClick={(e) => e.stopPropagation()}
       >
         {/* ── Image panel ── */}
-        <div className="relative shrink-0 bg-slate-50 md:w-[340px]">
+        <div className="relative shrink-0 bg-white md:w-[340px]">
           <div className="relative aspect-[4/3] md:aspect-auto md:h-full md:min-h-[360px]">
             <Image
               src={product.image}

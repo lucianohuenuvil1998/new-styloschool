@@ -1,9 +1,10 @@
 "use client";
 
-import Image from "next/image";
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 
 type Slide = { src: string; alt: string };
+
+const DRAG_THRESHOLD = 50; // px mínimos para cambiar slide
 
 export function HeroCarousel({
   slides,
@@ -13,6 +14,9 @@ export function HeroCarousel({
   className?: string;
 }) {
   const [index, setIndex] = useState(0);
+  const [dragging, setDragging] = useState(false);
+  const [dragOffset, setDragOffset] = useState(0);
+  const dragStart = useRef<number | null>(null);
 
   const next = useCallback(
     () => setIndex((i) => (i + 1) % slides.length),
@@ -23,27 +27,82 @@ export function HeroCarousel({
     [slides.length],
   );
 
+  // Auto-play — se pausa mientras se arrastra
   useEffect(() => {
+    if (dragging) return;
     const id = setInterval(next, 5500);
     return () => clearInterval(id);
-  }, [next]);
+  }, [next, dragging]);
+
+  // ── Mouse drag ──────────────────────────────────────
+  const onMouseDown = (e: React.MouseEvent) => {
+    dragStart.current = e.clientX;
+    setDragging(true);
+    setDragOffset(0);
+  };
+  const onMouseMove = (e: React.MouseEvent) => {
+    if (!dragging || dragStart.current === null) return;
+    setDragOffset(e.clientX - dragStart.current);
+  };
+  const onMouseUp = () => {
+    if (dragStart.current === null) return;
+    if (dragOffset < -DRAG_THRESHOLD) next();
+    else if (dragOffset > DRAG_THRESHOLD) prev();
+    dragStart.current = null;
+    setDragging(false);
+    setDragOffset(0);
+  };
+
+  // ── Touch drag ─────────────────────────────────────
+  const onTouchStart = (e: React.TouchEvent) => {
+    dragStart.current = e.touches[0].clientX;
+    setDragging(true);
+    setDragOffset(0);
+  };
+  const onTouchMove = (e: React.TouchEvent) => {
+    if (dragStart.current === null) return;
+    setDragOffset(e.touches[0].clientX - dragStart.current);
+  };
+  const onTouchEnd = () => {
+    if (dragStart.current === null) return;
+    if (dragOffset < -DRAG_THRESHOLD) next();
+    else if (dragOffset > DRAG_THRESHOLD) prev();
+    dragStart.current = null;
+    setDragging(false);
+    setDragOffset(0);
+  };
+
+  const translateX = -(index * 100) + (dragOffset / (typeof window !== "undefined" ? window.innerWidth : 1)) * 100;
 
   return (
-    <section className={`group relative overflow-hidden ${className}`}>
+    <section
+      className={`group relative overflow-hidden ${className}`}
+      onMouseDown={onMouseDown}
+      onMouseMove={onMouseMove}
+      onMouseUp={onMouseUp}
+      onMouseLeave={onMouseUp}
+      onTouchStart={onTouchStart}
+      onTouchMove={onTouchMove}
+      onTouchEnd={onTouchEnd}
+      style={{ cursor: dragging ? "grabbing" : "grab" }}
+    >
       {/* Slides */}
       <div
-        className="flex transition-transform duration-700 ease-in-out will-change-transform"
-        style={{ transform: `translateX(-${index * 100}%)` }}
+        className="flex will-change-transform"
+        style={{
+          transform: `translateX(${translateX}%)`,
+          transition: dragging ? "none" : "transform 700ms cubic-bezier(0.25, 1, 0.5, 1)",
+        }}
       >
         {slides.map((slide, i) => (
-          <div key={slide.src} className="relative w-full shrink-0 aspect-[16/6] min-h-[220px]">
-            <Image
+          <div key={slide.src} className="w-full shrink-0">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
               src={slide.src}
               alt={slide.alt}
-              fill
-              className="object-cover"
-              priority={i === 0}
-              sizes="100vw"
+              className="block h-auto w-full select-none"
+              draggable={false}
+              loading={i === 0 ? "eager" : "lazy"}
             />
           </div>
         ))}
