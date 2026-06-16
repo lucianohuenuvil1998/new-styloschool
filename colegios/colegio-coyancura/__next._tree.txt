@@ -1,3 +1,3 @@
 :HL["/_next/static/chunks/12c8o8ncsd-b6.css","style"]
 :HL["/_next/static/media/07454f8ad8aaac57-s.p.2kjei9psvcorz.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"colegios","param":null,"prefetchHints":0,"slots":{"children":{"name":"slug","param":{"type":"d","key":"colegio-coyancura","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"DE-6M-Rp15fgckotCRsXB"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"colegios","param":null,"prefetchHints":0,"slots":{"children":{"name":"slug","param":{"type":"d","key":"colegio-coyancura","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"PuJD9U6tqfXmpF28CrANj"}
