@@ -98,11 +98,11 @@ export function SiteHeader() {
         <nav className="mx-auto flex h-[72px] max-w-7xl items-center justify-between px-4 lg:px-8">
           <Link href="/" className="shrink-0" aria-label="Inicio">
             <Image
-              src="/img/logo.png"
+              src="/img/logo.webp"
               alt="Styloschool"
               width={150}
               height={52}
-              className="h-12 w-auto object-contain"
+              className="h-12 w-auto object-contain bg-none"
               priority
             />
           </Link>

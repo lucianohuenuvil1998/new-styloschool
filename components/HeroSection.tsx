@@ -36,11 +36,11 @@ export function HeroSection() {
         {/* Logo */}
         <div className="relative w-36 sm:w-44">
           <Image
-            src="/img/logo.png"
+            src="/img/logo.webp"
             alt="Styloschool"
             width={176}
             height={72}
-            className="object-contain drop-shadow-lg"
+            className="object-contain drop-shadow-lg bg-none"
             priority
           />
         </div>

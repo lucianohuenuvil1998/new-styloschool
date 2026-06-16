@@ -37,6 +37,14 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+img {
+  background-color: #ffffff;
+}
+
+img.bg-none {
+  background-color: transparent;
+}
+
 /* ─── Custom scrollbar ───────────────────────────────── */
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: #f1f5f9; }
