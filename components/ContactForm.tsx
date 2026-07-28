@@ -6,6 +6,10 @@ import { FormEvent, useState } from "react";
 const emailRegex =
   /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/i;
 
+const CONTACT_ENDPOINT =
+  process.env.NEXT_PUBLIC_CONTACT_URL ??
+  "https://lightsteelblue-pigeon-418442.hostingersite.com/sendMail.php";
+
 const inputCls =
   "w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-800 placeholder-slate-400 outline-none transition-shadow focus:border-brand focus:ring-2 focus:ring-brand/20";
 
@@ -49,12 +53,18 @@ export function ContactForm() {
 
     setLoading(true);
     try {
-      const res = await fetch("/api/contact", { method: "POST", body: data });
+      const res = await fetch(CONTACT_ENDPOINT, { method: "POST", body: data });
       if (!res.ok) throw new Error();
-      setStatus({ type: "success", message: "¡Mensaje enviado correctamente! Te responderemos a la brevedad." });
+      setStatus({
+        type: "success",
+        message: "¡Mensaje enviado correctamente! Te responderemos a la brevedad.",
+      });
       form.reset();
     } catch {
-      setStatus({ type: "error", message: "No se pudo enviar el mensaje. Intenta contactarnos por WhatsApp." });
+      setStatus({
+        type: "error",
+        message: "No se pudo enviar el mensaje. Intenta contactarnos por WhatsApp.",
+      });
     } finally {
       setLoading(false);
     }
