@@ -1,0 +1,8 @@
+User-Agent: *
+Allow: /
+Disallow: /sendMail.php
+Disallow: /api/
+Disallow: /no-disponible
+
+Host: https://styloschool.cl
+Sitemap: https://styloschool.cl/sitemap.xml
