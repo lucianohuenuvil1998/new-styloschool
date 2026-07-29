@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Colegios — Uniformes Escolares",
   description:
     "Uniformes para Colegio Las Condes, Coyancura, Nuestra Señora del Rosario, Leonardo Da Vinci, San Francisco y más.",
+  alternates: { canonical: "/colegios" },
 };
 
 export default function ColegiosPage() {

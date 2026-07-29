@@ -2,6 +2,7 @@ import type { Category, College } from "./types";
 
 export const SITE = {
   name: "Styloschool",
+  url: "https://styloschool.cl",
   tagline: "Atrévete y marca la diferencia",
   subtitle: "Tu imagen en nuestras manos!",
   description:

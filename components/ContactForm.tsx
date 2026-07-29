@@ -8,7 +8,7 @@ const emailRegex =
 
 const CONTACT_ENDPOINT =
   process.env.NEXT_PUBLIC_CONTACT_URL ??
-  "https://lightsteelblue-pigeon-418442.hostingersite.com/sendMail.php";
+  "https://styloschool.cl/sendMail.php";
 
 const inputCls =
   "w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-800 placeholder-slate-400 outline-none transition-shadow focus:border-brand focus:ring-2 focus:ring-brand/20";

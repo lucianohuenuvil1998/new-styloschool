@@ -20,6 +20,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `Uniformes ${college.name}`,
     description: `Encuentra el uniforme que necesitas para ${college.name}. Ver precios y disponibilidad.`,
+    alternates: { canonical: `/colegios/${slug}` },
+    openGraph: {
+      title: `Uniformes ${college.name} | Styloschool`,
+      description: `Catálogo de uniformes para ${college.name}.`,
+      images: [college.image],
+    },
   };
 }
 

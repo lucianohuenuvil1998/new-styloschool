@@ -2,7 +2,10 @@ import { Breadcrumb } from "@/components/Breadcrumb";
 import Link from "next/link";
 import type { Metadata } from "next";
 
-export const metadata: Metadata = { title: "Sección no disponible" };
+export const metadata: Metadata = {
+  title: "Sección no disponible",
+  robots: { index: false, follow: false },
+};
 
 export default function NotAvailablePage() {
   return (

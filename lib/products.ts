@@ -428,17 +428,17 @@ productsByCollege["colegio-san-francisco-del-alba"] = [
       ["Tallas disponibles", "4 a XXL"],
     ]),
   },
-  {
-    title: "Vestimenta deportiva",
-    image: "/img/productos/Colegio_san-francisco-del-alba/CSDA_4.webp",
-    lines: L([
-      ["Precio Polera", "Desde $11.500"],
-      ["Material", "Gamuza"],
-      ["Precio Buzo", "Desde $14.200"],
-      ["Material", "Algodón"],
-      ["Tallas disponibles", "4 a XXL"],
-    ]),
-  },
+  // {
+  //   title: "Vestimenta deportiva",
+  //   image: "/img/productos/Colegio_san-francisco-del-alba/CSDA_4.webp",
+  //   lines: L([
+  //     ["Precio Polera", "Desde $11.500"],
+  //     ["Material", "Gamuza"],
+  //     ["Precio Buzo", "Desde $14.200"],
+  //     ["Material", "Algodón"],
+  //     ["Tallas disponibles", "4 a XXL"],
+  //   ]),
+  // },
   {
     title: "Vestimenta deportiva",
     image: "/img/productos/Colegio_san-francisco-del-alba/CSDA_5.webp",
