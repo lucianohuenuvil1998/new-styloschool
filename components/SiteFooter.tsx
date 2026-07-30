@@ -14,11 +14,11 @@ export function SiteFooter() {
           <div className="lg:col-span-1">
             <div className="mb-4 flex items-center gap-2.5">
               <Image
-                src="/img/Stylos icon.png"
+                src="/img/logo.webp"
                 alt=""
                 width={28}
                 height={28}
-                className="opacity-90"
+                className="bg-none opacity-90"
               />
               <span className="text-lg font-bold text-white">Styloschool</span>
             </div>

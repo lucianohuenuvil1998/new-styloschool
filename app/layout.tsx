@@ -14,7 +14,7 @@ const nunito = Nunito({
 });
 
 export const viewport: Viewport = {
-  colorScheme: "light",
+  colorScheme: "only light",
 };
 
 export const metadata: Metadata = {
@@ -96,7 +96,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es" className={nunito.variable} style={{ colorScheme: "light" }}>
+    <html
+      lang="es"
+      className={nunito.variable}
+      style={{ colorScheme: "only light" }}
+    >
       <body className="flex min-h-screen flex-col font-sans antialiased">
         <script
           type="application/ld+json"

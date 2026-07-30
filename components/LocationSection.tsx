@@ -56,7 +56,7 @@ export function LocationSection() {
           </div>
 
           {/* Parking photos */}
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
             {[
               {
                 label: "Estacionamiento Av. Apoquindo 6415",
@@ -67,14 +67,17 @@ export function LocationSection() {
                 src: "/img/estacionamiento2.webp",
               },
             ].map((p) => (
-              <div key={p.src} className="flex flex-col overflow-hidden rounded-2xl border border-slate-200 shadow-sm">
-                <div className="relative min-h-0 flex-1">
+              <div
+                key={p.src}
+                className="flex flex-col overflow-hidden rounded-2xl border border-slate-200 shadow-sm"
+              >
+                <div className="relative aspect-[4/3] w-full bg-slate-100">
                   <Image
                     src={p.src}
                     alt={p.label}
                     fill
                     className="object-cover"
-                    sizes="(max-width: 768px) 50vw, 25vw"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                   />
                 </div>
                 <div className="bg-brand px-3 py-2.5">

@@ -1,9 +1,34 @@
-import type { Product } from "./types";
+import type { Product, ProductLine } from "./types";
 
 const L = (
   items: [string, string][],
 ): Product["lines"] => items.map(([label, value]) => ({ label, value }));
 
+/** Orden fijo de detalles (después de los precios). */
+const DETAIL_ORDER = ["tipo", "material", "tallas disponibles"] as const;
+
+function detailRank(label: string): number {
+  const key = label.trim().toLowerCase();
+  const idx = DETAIL_ORDER.indexOf(key as (typeof DETAIL_ORDER)[number]);
+  return idx === -1 ? DETAIL_ORDER.length : idx;
+}
+
+function isPriceLine(line: ProductLine): boolean {
+  return line.label.toLowerCase().includes("precio");
+}
+
+/** Precios primero (orden original), luego Tipo → Material → Tallas → resto. */
+export function normalizeProductLines(lines: ProductLine[]): ProductLine[] {
+  const prices = lines.filter(isPriceLine);
+  const details = lines
+    .filter((l) => !isPriceLine(l))
+    .sort((a, b) => {
+      const rank = detailRank(a.label) - detailRank(b.label);
+      if (rank !== 0) return rank;
+      return 0;
+    });
+  return [...prices, ...details];
+}
 export const productsByCollege: Record<string, Product[]> = {
   "colegio-las-condes": [
     {
@@ -506,5 +531,8 @@ productsByCollege["colegio-san-francisco-del-alba"] = [
 ];
 
 export function getProductsBySlug(slug: string): Product[] {
-  return productsByCollege[slug] ?? [];
+  return (productsByCollege[slug] ?? []).map((product) => ({
+    ...product,
+    lines: normalizeProductLines(product.lines),
+  }));
 }

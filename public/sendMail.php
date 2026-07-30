@@ -30,12 +30,16 @@ $asunto = clean($_POST['asunto'] ?? '');
 $message = trim((string) ($_POST['message'] ?? ''));
 $establecimiento = clean($_POST['establecimiento'] ?? '');
 
+$emailOk = (bool) preg_match('/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/', $email);
+$phoneOk = (bool) preg_match('/^\+569\d{8}$/', $number);
+$nameOk = (bool) preg_match('/^[A-Za-zÁÉÍÓÚÜÑáéíóúüñ]+(?:\s+[A-Za-zÁÉÍÓÚÜÑáéíóúüñ]+)*$/u', $name);
+
 if (
-  strlen($name) < 2 || strlen($name) > 20 ||
-  strlen($number) < 8 || strlen($number) > 11 ||
-  strlen($asunto) < 4 ||
-  strlen($message) < 10 ||
-  !filter_var($email, FILTER_VALIDATE_EMAIL)
+  !$nameOk || mb_strlen($name) < 2 || mb_strlen($name) > 60 ||
+  !$phoneOk ||
+  mb_strlen($asunto) < 4 || mb_strlen($asunto) > 25 ||
+  strlen($email) > 64 || !$emailOk ||
+  mb_strlen($message) < 10 || mb_strlen($message) > 400
 ) {
   http_response_code(400);
   echo 'Datos inválidos';
