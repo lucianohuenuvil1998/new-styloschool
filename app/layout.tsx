@@ -48,7 +48,13 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
-  icons: { icon: "/img/Stylos icon.png" },
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/img/Stylos icon.png", type: "image/png" },
+    ],
+    apple: "/img/Stylos icon.png",
+  },
   openGraph: {
     type: "website",
     locale: "es_CL",
